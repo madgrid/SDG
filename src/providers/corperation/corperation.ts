@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class CorperationProvider {
 
-  url: string = 'https://ap-southeast-1.console.aws.amazon.com:8090';
+  url: string = 'http://ec2-54-169-58-55.ap-southeast-1.compute.amazonaws.com:8090';
 
   constructor(public http: Http) {
   }
