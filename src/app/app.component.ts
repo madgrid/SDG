@@ -21,6 +21,7 @@ import { SignupCorperationPage } from '../pages/signup-corperation/signup-corper
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { WelcomePage } from '../pages/welcome/welcome';
+import { ConfirmationPage } from '../pages/confirmation/confirmation'
 
 import { Settings } from '../providers/providers';
 
@@ -66,7 +67,8 @@ export class MyApp {
     { title: 'Master Detail', component: ListMasterPage },
     { title: 'Menu', component: MenuPage },
     { title: 'Settings', component: SettingsPage },
-    { title: 'Search', component: SearchPage }
+    { title: 'Search', component: SearchPage },
+    { title: 'Confirmaion', componenet: ConfirmationPage }
   ]
 
   constructor(private translate: TranslateService, private platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {

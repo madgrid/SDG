@@ -2,7 +2,10 @@ import { Component } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
 
 import { MainPage } from '../../pages/pages';
-import { User } from '../../providers/user';
+import { CorperationProvider } from '../../providers/corperation/corperation';
+import { NgoProvider } from '../../providers/ngo/ngo';
+import { WelcomePage } from '../welcome/welcome';
+import { ConfirmationPage } from '../confirmation/confirmation';
 
 import { TranslateService } from '@ngx-translate/core';
 
@@ -12,17 +15,21 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class SignupCorperationPage {
 
-  account: { name: string, email: string, password: string } = {
-    name: 'Test Human',
+
+  account: { name: string, email: string, region: string, cb_sdg: any, cb_subscribe: any } = {
+    name: 'Harison Ford',
     email: 'test@example.com',
-    password: 'test'
+    region: 'country',
+    cb_sdg: true,
+    cb_subscribe: true
   };
+
 
   // Our translated text strings
   private signupErrorString: string;
 
   constructor(public navCtrl: NavController,
-    public user: User,
+    public corperation: CorperationProvider,
     public toastCtrl: ToastController,
     public translateService: TranslateService) {
 
@@ -31,14 +38,27 @@ export class SignupCorperationPage {
     })
   }
 
+
+  convertCheckbox(sdg, subscribe) {
+    if (sdg == true)
+      this.account.cb_sdg = 1;
+    else if (sdg == false)
+      this.account.cb_sdg = 0;
+
+    if(subscribe == true)
+      this.account.cb_subscribe = 1;
+    else if (subscribe == false)
+      this.account.cb_subscribe = 0;
+  }
+
   doSignup() {
-    // Attempt to login in through our User service
-    this.user.signup(this.account).subscribe((resp) => {
-      this.navCtrl.push(MainPage);
+    // TODO: wrap in promise
+    this.convertCheckbox(this.account.cb_sdg, this.account.cb_subscribe);
+
+    // TODO: put in seperate function
+    this.corperation.sendSignUp(this.account).subscribe((resp) => {
+      this.navCtrl.push(ConfirmationPage);
     }, (err) => {
-
-      this.navCtrl.push(MainPage); // TODO: Remove this when you add your signup endpoint
-
       // Unable to sign up
       let toast = this.toastCtrl.create({
         message: this.signupErrorString,

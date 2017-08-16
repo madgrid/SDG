@@ -24,6 +24,7 @@ import { WelcomePage } from '../pages/welcome/welcome';
 import { SignupIndividualPage } from '../pages/signup-individual/signup-individual';
 import { SignupNgoPage } from '../pages/signup-ngo/signup-ngo';
 import { SignupCorperationPage } from '../pages/signup-corperation/signup-corperation';
+import { ConfirmationPage } from '../pages/confirmation/confirmation'
 
 import { Api } from '../providers/api';
 import { Items } from '../mocks/providers/items';
@@ -38,6 +39,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { NgoProvider } from '../providers/ngo/ngo';
+import { CorperationProvider } from '../providers/corperation/corperation';
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -80,7 +83,8 @@ export function provideSettings(storage: Storage) {
     SignupCorperationPage,
     TabsPage,
     TutorialPage,
-    WelcomePage
+    WelcomePage,
+    ConfirmationPage
   ],
   imports: [
     BrowserModule,
@@ -115,7 +119,8 @@ export function provideSettings(storage: Storage) {
     SignupCorperationPage,
     TabsPage,
     TutorialPage,
-    WelcomePage
+    WelcomePage,
+    ConfirmationPage
   ],
   providers: [
     IndividualProvider,
@@ -129,6 +134,8 @@ export function provideSettings(storage: Storage) {
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     // Keep this to enable Ionic's runtime error handling during development
     { provide: ErrorHandler, useClass: IonicErrorHandler },
+    NgoProvider,
+    CorperationProvider,
   ]
 })
 export class AppModule { }

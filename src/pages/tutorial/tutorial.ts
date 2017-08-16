@@ -35,7 +35,7 @@ export class TutorialPage {
           {
             title: values.TUTORIAL_SLIDE1_TITLE,
             description: values.TUTORIAL_SLIDE1_DESCRIPTION,
-            image: 'assets/img/ica-slidebox-img-1.png',
+            image: 'assets/img/temp_coin.jpg',
           },
           {
             title: values.TUTORIAL_SLIDE2_TITLE,

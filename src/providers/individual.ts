@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class IndividualProvider {
-  url: string = 'http://172.31.42.242:8090';
+  url: string = 'https://ap-southeast-1.console.aws.amazon.com:8090';
 
   constructor(public http: Http) {
   }

@@ -8,6 +8,19 @@
   "LOGIN": "Sign in",
   "SIGNUP": "Sign up",
 
+  "INDIVIDUAL_NAME": "Individual Name",
+  "INDIVIDUAL_CHECK1": "Sign up of ISR - SDG Token",
+  "INDIVIDUAL_CHECK2": "Subscribe to future social currencies",
+  "C_NAME": "Organizations Name",
+  "C_ANON": "Wish to remain anonymous",
+  "C_LINK": "Organizations Link",
+  "C_TYPE": "Type of Organization",
+  "C_CHECK1": "for-profit org",
+  "C_CHECK2": "non-for-profit org",
+  "C_CHECK3": "social enterprise",
+
+
+
   "TAB1_TITLE": "Items",
   "TAB2_TITLE": "Search",
   "TAB3_TITLE": "Settings",

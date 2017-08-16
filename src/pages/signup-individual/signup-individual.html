@@ -1,9 +1,8 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Individual Sign up</ion-title>
+    <ion-title>SDG Token Sign up for Individuals (ISR)</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
@@ -12,27 +11,28 @@
     <ion-list>
 
       <ion-item>
-        <ion-label fixed>{{ 'NAME' | translate }}</ion-label>
+        <ion-label>{{ 'INDIVIDUAL_NAME' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
+        <ion-label>{{ 'EMAIL' | translate }}</ion-label>
         <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
       </ion-item>
 
-      <!--
-      Want to add a Username? Here you go:
-
       <ion-item>
-        <ion-label floating>Username</ion-label>
-        <ion-input type="text" [(ngModel)]="account.username" name="username"></ion-input>
+        <ion-label>Region</ion-label>
+        <ion-input type="region" [(ngModel)]="account.region" name="region"></ion-input>
       </ion-item>
-      -->
 
       <ion-item>
-        <ion-label fixed>Gender</ion-label>
-        <ion-input type="text" [(ngModel)]="account.gender" name="gender"></ion-input>
+          <ion-label>{{'INDIVIDUAL_CHECK1' | translate}}</ion-label>
+          <ion-checkbox color="green" checked="true" [(ngModel)]="account.cb_sdg" [ngModelOptions]="{standalone: true}"></ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>{{'INDIVIDUAL_CHECK2' | translate}}</ion-label>
+          <ion-checkbox color="green" checked="true" [(ngModel)]="account.cb_subscribe" [ngModelOptions]="{standalone: true}"></ion-checkbox>
       </ion-item>
 
       <div padding>
