@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
-import { SignupPage } from '../signup/signup';
 import { SignupIndividualPage } from '../signup-individual/signup-individual';
 import { SignupNgoPage } from '../signup-ngo/signup-ngo';
 import { SignupCorperationPage } from '../signup-corperation/signup-corperation';
 
 
-@IonicPage()
 @Component({
   selector: 'page-signup-select',
   templateUrl: 'signup-select.html',

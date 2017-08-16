@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
 
-import { MainPage } from '../../pages/pages';
 import { User } from '../../providers/user';
 import { NgoProvider } from '../../providers/ngo/ngo';
 import { WelcomePage } from '../welcome/welcome';

@@ -4,21 +4,11 @@ import { Platform, Nav, Config } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { CardsPage } from '../pages/cards/cards';
-import { ContentPage } from '../pages/content/content';
 import { FirstRunPage } from '../pages/pages';
-import { ListMasterPage } from '../pages/list-master/list-master';
-import { LoginPage } from '../pages/login/login';
-import { MapPage } from '../pages/map/map';
-import { MenuPage } from '../pages/menu/menu';
-import { SearchPage } from '../pages/search/search';
-import { SettingsPage } from '../pages/settings/settings';
-import { SignupPage } from '../pages/signup/signup';
 import { SignupSelectPage } from '../pages/signup-select/signup-select';
 import { SignupIndividualPage } from '../pages/signup-individual/signup-individual';
 import { SignupNgoPage } from '../pages/signup-ngo/signup-ngo';
 import { SignupCorperationPage } from '../pages/signup-corperation/signup-corperation';
-import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { ConfirmationPage } from '../pages/confirmation/confirmation'
@@ -54,21 +44,11 @@ export class MyApp {
   pages: any[] = [
     { title: 'Tutorial', component: TutorialPage },
     { title: 'Welcome', component: WelcomePage },
-    { title: 'Tabs', component: TabsPage },
-    { title: 'Cards', component: CardsPage },
-    { title: 'Content', component: ContentPage },
-    { title: 'Login', component: LoginPage },
-    { title: 'Signup', component: SignupPage },
     { title: 'SignupSelectPage', component: SignupSelectPage },
     { title: 'SignupIndividualPage', component: SignupIndividualPage },
     { title: 'SignupCorperationPage', component: SignupCorperationPage },
     { title: 'SignupNgoPage', component: SignupNgoPage },
-    { title: 'Map', component: MapPage },
-    { title: 'Master Detail', component: ListMasterPage },
-    { title: 'Menu', component: MenuPage },
-    { title: 'Settings', component: SettingsPage },
-    { title: 'Search', component: SearchPage },
-    { title: 'Confirmaion', componenet: ConfirmationPage }
+    { title: 'Confirmaion', component: ConfirmationPage }
   ]
 
   constructor(private translate: TranslateService, private platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {

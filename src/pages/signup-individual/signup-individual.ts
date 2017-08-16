@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
 
-import { MainPage } from '../../pages/pages';
 import { User } from '../../providers/user';
 import { IndividualProvider } from '../../providers/individual';
 import { WelcomePage } from '../welcome/welcome';
@@ -17,13 +16,14 @@ import { TranslateService } from '@ngx-translate/core';
 
 export class SignupIndividualPage {
 
-  account: { name: string, email: string, region: string, promo: string, cb_sdg: any, cb_subscribe: any } = {
+  account: { name: string, email: string, region: string, promo: string, cb_sdg: any, cb_subscribe: any, language: string } = {
     name: '',
     email: '',
     region: '',
     promo: '',
     cb_sdg: true,
-    cb_subscribe: true
+    cb_subscribe: true,
+    language: 'en'
   };
 
   // ADDD LANGUAGE
