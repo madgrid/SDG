@@ -13,7 +13,7 @@ export class CorperationProvider {
 
   sendSignUp(user) {
     console.log('1',user)
-    return this.post('corperation', user);
+    return this.post('company', user);
   }
 
   post(endpoint: string, body: any) {

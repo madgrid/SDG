@@ -40,7 +40,7 @@ export class TutorialPage {
           {
             title: values.TUTORIAL_SLIDE2_TITLE,
             description: values.TUTORIAL_SLIDE2_DESCRIPTION,
-            image: 'assets/img/ica-slidebox-img-2.png',
+            image: 'assets/img/circle1.jpg',
           },
           {
             title: values.TUTORIAL_SLIDE3_TITLE,

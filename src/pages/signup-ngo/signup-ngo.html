@@ -11,17 +11,28 @@
 
       <ion-item>
         <ion-label>{{ 'NAME' | translate }}</ion-label>
-        <ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>
+        <ion-input type="text" [(ngModel)]="account.name" name="name" placeholder="Harison Ford"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label>{{ 'EMAIL' | translate }}</ion-label>
-        <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
+        <ion-input type="email" [(ngModel)]="account.email" name="email" placeholder="test@example.com"></ion-input>
       </ion-item>
 
       <ion-item>
+        <ion-label>Website</ion-label>
+        <ion-input type="text" [(ngModel)]="account.website" name="website" placeholder="https://yourawesomesite.com"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
         <ion-label>Region</ion-label>
-        <ion-input type="region" [(ngModel)]="account.region" name="region"></ion-input>
+        <ion-input type="region" [(ngModel)]="account.region" name="region" placeholder="country"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Promo</ion-label>
+        <ion-input type="text" [(ngModel)]="account.promo" name="promo" placeholder="optional"></ion-input>
       </ion-item>
 
       <ion-item>

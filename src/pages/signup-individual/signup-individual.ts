@@ -17,10 +17,11 @@ import { TranslateService } from '@ngx-translate/core';
 
 export class SignupIndividualPage {
 
-  account: { name: string, email: string, region: string, cb_sdg: any, cb_subscribe: any } = {
-    name: 'Harison Ford',
-    email: 'test@example.com',
-    region: 'country',
+  account: { name: string, email: string, region: string, promo: string, cb_sdg: any, cb_subscribe: any } = {
+    name: '',
+    email: '',
+    region: '',
+    promo: '',
     cb_sdg: true,
     cb_subscribe: true
   };
