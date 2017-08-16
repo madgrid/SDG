@@ -2,36 +2,34 @@
   "BACK_BUTTON_TEXT" : "Back",
 
   "NAME": "Name",
-  "EMAIL": "Email",
+  "EMAIL": "Contact Email",
   "USERNAME": "Username",
   "PASSWORD": "Password",
   "LOGIN": "Sign in",
   "SIGNUP": "Sign up",
+  "REGION": "Region",
+  "PROMO": "Promo Code",
 
-  "INDIVIDUAL_NAME": "Individual Name",
+
+  "INDIVIDUAL_NAME": "Your name",
   "INDIVIDUAL_CHECK1": "Sign up of ISR - SDG Token",
   "INDIVIDUAL_CHECK2": "Subscribe to future social currencies",
   "C_NAME": "Organizations Name",
-  "C_ANON": "Wish to remain anonymous",
-  "C_LINK": "Organizations Link",
+  "C_LINK": "Organizations Website Link",
   "C_TYPE": "Type of Organization",
   "C_CHECK1": "for-profit org",
   "C_CHECK2": "non-for-profit org",
   "C_CHECK3": "social enterprise",
 
+  "WELCOME_H2" : "Make a contribution",
+  "WELCOME_H3" : "By signing up now",
 
-
-  "TAB1_TITLE": "Items",
-  "TAB2_TITLE": "Search",
-  "TAB3_TITLE": "Settings",
-
-  "MAP_TITLE": "Map",
 
   "TUTORIAL_SKIP_BUTTON" : "Skip",
   "TUTORIAL_CONTINUE_BUTTON" : "Continue",
 
   "TUTORIAL_SLIDE1_TITLE": "Caring Currency",
-  "TUTORIAL_SLIDE1_DESCRIPTION": "Have some dope ass graphic of a coin.",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "ISR>CSR>SDG",
 
   "TUTORIAL_SLIDE2_TITLE": "SDG",
   "TUTORIAL_SLIDE2_DESCRIPTION": "Explain Me",
@@ -40,47 +38,17 @@
   "TUTORIAL_SLIDE3_DESCRIPTION": "How we utilize industry technology something solution",
 
   "TUTORIAL_SLIDE4_TITLE": "Take Action",
-
-  "WELCOME_INTRO" : "The starting point for your next great Ionic app",
-
-  "SETTINGS_TITLE": "Settings",
-  "SETTINGS_OPTION1": "Option 1",
-  "SETTINGS_OPTION2": "Option 2",
-  "SETTINGS_OPTION3": "Option 3",
-  "SETTINGS_OPTION4": "Option 4",
-
-  "SETTINGS_PROFILE_BUTTON" : "Edit Profile",
-
-  "SETTINGS_PAGE_PROFILE": "Edit Profile",
-
-  "WELCOME_TITLE": "Welcome",
-
-  "LOGIN_TITLE": "Sign in",
-  "LOGIN_ERROR": "Unable to sign in. Please check your account information and try again.",
-  "LOGIN_BUTTON": "Sign in",
-  "SIGNUP_TITLE": "Sign up",
-  "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
-  "SIGNUP_BUTTON": "Sign up",
-
-  "LIST_MASTER_TITLE": "Items",
-
-  "ITEM_CREATE_TITLE": "New Item",
-  "ITEM_CREATE_CHOOSE_IMAGE": "Add Image",
-
-  "ITEM_NAME_PLACEHOLDER" : "Name",
-  "ITEM_ABOUT_PLACEHOLDER" : "About",
-
-  "DONE_BUTTON" : "Done",
-  "CANCEL_BUTTON" : "Cancel",
-  "DELETE_BUTTON" : "Delete",
-
-  "CARDS_TITLE": "Social",
-
-  "SEARCH_TITLE": "Search",
-  "SEARCH_PLACEHOLDER" : "Search the items list, e.g. \"Donald Duck\"",
   "NGO": "NGO",
   "INDIVIDUAL": "Individual",
   "CORPERATION": "Corperation",
   "CHOOSE_SIGNUP_BEGIN": "From a passionate individual to a forward thinking company we accept all who desire change for a better tomorrow.",
-  "CHOOSE_SIGNUP_END": "Who are you?"
+  "CHOOSE_SIGNUP_END": "Who are you?",
+
+  "I_TITLE": "SDG Token Sign up for Individuals (ISR)",
+  "C_TITLE": "SDG Token Sign up for organizations (CSR)",
+  "N_TITLE": "SDG Sign up for Non profit organizations (NGO)",
+
+  "CONFIRM_1": "Thank you for signing up we will notify you of changes for the SDG token",
+  "CONFIRM_2": "And plans for the future"
+
 }
