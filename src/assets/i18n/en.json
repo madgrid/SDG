@@ -49,6 +49,8 @@
   "N_TITLE": "SDG Sign up for Non profit organizations (NGO)",
 
   "CONFIRM_1": "Thank you for signing up we will notify you of changes for the SDG token",
-  "CONFIRM_2": "And plans for the future"
+  "CONFIRM_2": "And plans for the future",
+
+  "SIGNUP_BUTTON": "Sign up"
 
 }
