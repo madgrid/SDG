@@ -10,11 +10,12 @@
   <ion-slides pager="true" (ionSlideWillChange)="onSlideChangeStart($event)">
     <ion-slide *ngFor="let slide of slides">
       <img [src]="slide.image" class="slide-image" />
-      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
-      <p [innerHTML]="slide.description"></p>
+      <h1 class="slide-title" [innerHTML]="slide.title"></h1>
+      <h2 [innerHTML]="slide.description"></h2>
+      <h3 [innerHTML]="slide.more1"></h3>
     </ion-slide>
     <ion-slide>
-      <img src="assets/img/three.jpg" class="slide-image" />
+      <img src="assets/img/ica-slidebox-img-1a.png" class="slide-image" />
       <h2 class="slide-title">{{ 'TUTORIAL_SLIDE4_TITLE' | translate }}</h2>
       <button ion-button icon-end large clear (click)="startApp()">
         {{ 'TUTORIAL_CONTINUE_BUTTON' | translate }}

@@ -10,6 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 export interface Slide {
   title: string;
   description: string;
+  more1: string;
   image: string;
 }
 
@@ -23,28 +24,34 @@ export class TutorialPage {
 
   constructor(public navCtrl: NavController, public menu: MenuController, translate: TranslateService) {
     translate.get(["TUTORIAL_SLIDE1_TITLE",
-      "TUTORIAL_SLIDE1_DESCRIPTION",
+                   "TUTORIAL_SLIDE1_DESCRIPTION",
+                   "TUTORIAL_SLIDE1_MORE1",
       "TUTORIAL_SLIDE2_TITLE",
-      "TUTORIAL_SLIDE2_DESCRIPTION",
+                   "TUTORIAL_SLIDE2_DESCRIPTION",
+                   "TUTORIAL_SLIDE2_MORE1",
       "TUTORIAL_SLIDE3_TITLE",
-      "TUTORIAL_SLIDE3_DESCRIPTION",
+                   "TUTORIAL_SLIDE3_DESCRIPTION",
+                   "TUTORIAL_SLIDE1_MORE3",
     ]).subscribe(
       (values) => {
         console.log('Loaded values', values);
         this.slides = [
           {
             title: values.TUTORIAL_SLIDE1_TITLE,
-            description: values.TUTORIAL_SLIDE1_DESCRIPTION,
-            image: 'assets/img/ica-slidebox-img-1a.png',
+          description: values.TUTORIAL_SLIDE1_DESCRIPTION,
+          more1: values.TUTORIAL_SLIDE1_MORE1,
+            image: 'assets/img/temp_coin.jpg',
           },
           {
             title: values.TUTORIAL_SLIDE2_TITLE,
             description: values.TUTORIAL_SLIDE2_DESCRIPTION,
-            image: 'assets/img/circle1.jpg',
+          more1: values.TUTORIAL_SLIDE2_MORE1,
+            image: 'assets/img/three.jpg',
           },
           {
             title: values.TUTORIAL_SLIDE3_TITLE,
             description: values.TUTORIAL_SLIDE3_DESCRIPTION,
+          more1: values.TUTORIAL_SLIDE3_MORE1,
             image: 'assets/img/ica-slidebox-img-3.png',
           }
         ];
