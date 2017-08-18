@@ -21,8 +21,8 @@
   "C_CHECK2": "non-for-profit org",
   "C_CHECK3": "social enterprise",
 
-  "WELCOME_H2" : "Make a contribution",
-  "WELCOME_H3" : "By signing up now",
+  "WELCOME_H2" : "Be 'Part of the Solution'",
+  "WELCOME_H3" : "Join the team.",
 
 
   "TUTORIAL_SKIP_BUTTON" : "Skip",
@@ -30,29 +30,26 @@
 
   "TUTORIAL_SLIDE1_TITLE": "Caring Currency",
   "TUTORIAL_SLIDE1_DESCRIPTION": "ISR>CSR>SDG",
+  "TUTORIAL_SLIDE1_MORE1": "New, Fun, Identity",
 
-  "TUTORIAL_SLIDE1_MORE1": "A fun new way to recognize, share values IDENTIFY and VALIDATE YOURSELF and others",
-
+  "TUTORIAL_SLIDE2_TITLE": "Meaningful",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "Problem Solving",
   "TUTORIAL_SLIDE2_MORE1": "",
 
-  "TUTORIAL_SLIDE3_MORE1": "",
-
-  "TUTORIAL_SLIDE2_TITLE": "SDG",
-  "TUTORIAL_SLIDE2_DESCRIPTION": "A meaningful reason to work together to SOLVE OUR PROBLEMS, big and small.",
-
-  "TUTORIAL_SLIDE3_TITLE": "Block Chain save the world",
-  "TUTORIAL_SLIDE3_DESCRIPTION": "An exciting, big opportunity to EARN CREDIT and personally benefit from doing good while building your Social Credit Score and preparing for UBI income.",
+  "TUTORIAL_SLIDE3_TITLE": "Exciting",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "Earning Potential",
+  "TUTORIAL_SLIDE3_MORE1": "(social credit)",
 
   "TUTORIAL_SLIDE4_TITLE": "Take Action",
-  "NGO": "NGO",
+  "NGO": "Not-For-Profit Social Enterprise",
   "INDIVIDUAL": "Individual",
-  "CORPERATION": "Corperation",
+  "CORPERATION": "For-Profit Organization",
   "CHOOSE_SIGNUP_BEGIN": "From a passionate individual to a forward thinking company we accept all who desire change for a better tomorrow.",
   "CHOOSE_SIGNUP_END": "Who are you?",
 
-  "I_TITLE": "SDG Token Sign up for Individuals (ISR)",
-  "C_TITLE": "SDG Token Sign up for organizations (CSR)",
-  "N_TITLE": "SDG Sign up for Non profit organizations (NGO)",
+  "I_TITLE": "Invididual Sign up (ISR)",
+  "C_TITLE": "For-Profit Organizations Sign up (CSR)",
+  "N_TITLE": "Not-for-Profit Social Enterprise Sign up (NGO)",
 
   "CONFIRM_1": "Thank you for signing up we will notify you of changes for the SDG token",
   "CONFIRM_2": "And plans for the future",

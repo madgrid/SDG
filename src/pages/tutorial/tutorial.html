@@ -11,12 +11,12 @@
     <ion-slide *ngFor="let slide of slides">
       <img [src]="slide.image" class="slide-image" />
       <h1 class="slide-title" [innerHTML]="slide.title"></h1>
-      <h2 [innerHTML]="slide.description"></h2>
+      <h3 [innerHTML]="slide.description"></h3>
       <h3 [innerHTML]="slide.more1"></h3>
     </ion-slide>
     <ion-slide>
       <img src="assets/img/ica-slidebox-img-1a.png" class="slide-image" />
-      <h2 class="slide-title">{{ 'TUTORIAL_SLIDE4_TITLE' | translate }}</h2>
+      <h1 class="slide-title">{{ 'TUTORIAL_SLIDE4_TITLE' | translate }}</h1>
       <button ion-button icon-end large clear (click)="startApp()">
         {{ 'TUTORIAL_CONTINUE_BUTTON' | translate }}
         <ion-icon name="arrow-forward"></ion-icon>
