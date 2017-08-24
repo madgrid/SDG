@@ -22,7 +22,7 @@
   "C_CHECK3": "social enterprise",
 
   "WELCOME_H2" : "Be 'Part of the Solution'",
-  "WELCOME_H3" : "Join the team.",
+  "WELCOME_H3" : "Subscribe Now",
 
 
   "TUTORIAL_SKIP_BUTTON" : "Skip",
@@ -41,15 +41,15 @@
   "TUTORIAL_SLIDE3_MORE1": "(social credit)",
 
   "TUTORIAL_SLIDE4_TITLE": "Take Action",
-  "NGO": "Not-For-Profit Social Enterprise",
-  "INDIVIDUAL": "Individual",
-  "CORPERATION": "For-Profit Organization",
-  "CHOOSE_SIGNUP_BEGIN": "From a passionate individual to a forward thinking company we accept all who desire change for a better tomorrow.",
+  "NGO": "Not-For-Profit (SDG)",
+  "INDIVIDUAL": "Individual (ISR)",
+  "CORPERATION": "For-Profit (CSR)",
+
   "CHOOSE_SIGNUP_END": "Who are you?",
 
-  "I_TITLE": "Invididual Sign up (ISR)",
-  "C_TITLE": "For-Profit Organizations Sign up (CSR)",
-  "N_TITLE": "Not-for-Profit Social Enterprise Sign up (NGO)",
+  "I_TITLE": "Caring Currency Information",
+  "C_TITLE": "Caring Currency Information",
+  "N_TITLE": "Caring Currency Information",
 
   "CONFIRM_1": "Thank you for signing up we will notify you of changes for the SDG token",
   "CONFIRM_2": "And plans for the future",
