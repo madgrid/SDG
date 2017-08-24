@@ -26,12 +26,12 @@ export class TutorialPage {
     translate.get(["TUTORIAL_SLIDE1_TITLE",
                    "TUTORIAL_SLIDE1_DESCRIPTION",
                    "TUTORIAL_SLIDE1_MORE1",
-      "TUTORIAL_SLIDE2_TITLE",
+                   "TUTORIAL_SLIDE2_TITLE",
                    "TUTORIAL_SLIDE2_DESCRIPTION",
                    "TUTORIAL_SLIDE2_MORE1",
-      "TUTORIAL_SLIDE3_TITLE",
+                   "TUTORIAL_SLIDE3_TITLE",
                    "TUTORIAL_SLIDE3_DESCRIPTION",
-                   "TUTORIAL_SLIDE1_MORE3",
+                   "TUTORIAL_SLIDE3_MORE1",
     ]).subscribe(
       (values) => {
         console.log('Loaded values', values);
@@ -40,7 +40,7 @@ export class TutorialPage {
             title: values.TUTORIAL_SLIDE1_TITLE,
           description: values.TUTORIAL_SLIDE1_DESCRIPTION,
           more1: values.TUTORIAL_SLIDE1_MORE1,
-            image: 'assets/img/temp_coin.jpg',
+            image: 'assets/img/coin'+ this.coinSwitcher() +'.png',
           },
           {
             title: values.TUTORIAL_SLIDE2_TITLE,
@@ -57,6 +57,10 @@ export class TutorialPage {
         ];
       });
   }
+
+    coinSwitcher() {
+        return Math.floor(Math.random() * 2) + 1;
+    }
 
   startApp() {
     this.navCtrl.setRoot(WelcomePage, {}, {

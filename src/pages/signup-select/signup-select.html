@@ -4,7 +4,6 @@
   <div class="splash-info">
     <div class="splash-logo"></div>
     <div class="splash-intro">
-        {{ 'CHOOSE_SIGNUP_BEGIN' | translate }}
         <div>
             {{ 'CHOOSE_SIGNUP_END' | translate }}
         </div>
@@ -12,8 +11,8 @@
   </div>
   <div padding>
     <button ion-button block (click)="signupForm('individual')" class="fade">{{ 'INDIVIDUAL' | translate }}</button>
-    <button ion-button block (click)="signupForm('ngo')" class="fade">{{ 'NGO' | translate }}</button>
     <button ion-button block (click)="signupForm('corperation')" class="fade">{{ 'CORPERATION' | translate }}</button>
+    <button ion-button block (click)="signupForm('ngo')" class="fade">{{ 'NGO' | translate }}</button>
   </div>
 
 </ion-content>
