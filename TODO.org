@@ -1,0 +1,11 @@
+* Preparation
+** DONE Find out the module.ts/app.module.ts files from lightwallet
+   CLOSED: [2018-02-04 Sun 13:02]
+* Clean Up
+** DONE Remove unused imports
+   CLOSED: [2018-02-04 Sun 13:15]
+** TODO Clean up app.module.ts
+* Implementation
+** TODO Fix style
+** TODO Remove beginning slides
+** TODO Add module ts to every view
