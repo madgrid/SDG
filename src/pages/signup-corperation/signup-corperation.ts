@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
 
 import { CorperationProvider } from '../../providers/corperation/corperation';
-import { NgoProvider } from '../../providers/ngo/ngo';
-import { WelcomePage } from '../welcome/welcome';
 import { ConfirmationPage } from '../confirmation/confirmation';
 
 import { TranslateService } from '@ngx-translate/core';
