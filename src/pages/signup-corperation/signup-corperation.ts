@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { NavController, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, ToastController } from 'ionic-angular';
 
 import { CorperationProvider } from '../../providers/corperation/corperation';
-import { ConfirmationPage } from '../confirmation/confirmation';
+// import { ConfirmationPage } from '../confirmation/confirmation';
 
 import { TranslateService } from '@ngx-translate/core';
 
+@IonicPage()
 @Component({
   selector: 'page-signup-corperation',
   templateUrl: 'signup-corperation.html',
@@ -56,7 +57,7 @@ export class SignupCorperationPage {
 
     // TODO: put in seperate function
     this.corperation.sendSignUp(this.account).subscribe((resp) => {
-      this.navCtrl.push(ConfirmationPage);
+      this.navCtrl.push('ConfirmationPage');
     }, (err) => {
       // Unable to sign up
       let toast = this.toastCtrl.create({
