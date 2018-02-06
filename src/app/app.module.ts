@@ -6,15 +6,15 @@ import { Storage, IonicStorageModule } from '@ionic/storage';
 
 import { MyApp } from './app.component';
 
-import { SignupSelectPage } from '../pages/signup-select/signup-select';
-import { TutorialPage } from '../pages/tutorial/tutorial';
-import { WelcomePage } from '../pages/welcome/welcome';
-import { SignupIndividualPage } from '../pages/signup-individual/signup-individual';
-import { SignupNgoPage } from '../pages/signup-ngo/signup-ngo';
-import { SignupCorperationPage } from '../pages/signup-corperation/signup-corperation';
-import { ConfirmationPage } from '../pages/confirmation/confirmation';
-import { ContentPage } from '../pages/content/content';
-import { MenuPage } from '../pages/menu/menu';
+// import { SignupSelectPage } from '../pages/signup-select/signup-select';
+// import { TutorialPage } from '../pages/tutorial/tutorial';
+// import { WelcomePage } from '../pages/welcome/welcome';
+// import { SignupIndividualPage } from '../pages/signup-individual/signup-individual';
+// import { SignupNgoPage } from '../pages/signup-ngo/signup-ngo';
+// import { SignupCorperationPage } from '../pages/signup-corperation/signup-corperation';
+// import { ConfirmationPage } from '../pages/confirmation/confirmation';
+// import { ContentPage } from '../pages/content/content';
+// import { MenuPage } from '../pages/menu/menu';
 
 import { Api } from '../providers/api';
 import { Items } from '../mocks/providers/items';
@@ -56,15 +56,6 @@ export function provideSettings(storage: Storage) {
 @NgModule({
   declarations: [
     MyApp,
-    SignupSelectPage,
-    SignupNgoPage,
-    SignupIndividualPage,
-    SignupCorperationPage,
-    TutorialPage,
-    WelcomePage,
-    ConfirmationPage,
-    ContentPage,
-    MenuPage
   ],
   imports: [
     BrowserModule,
@@ -82,15 +73,6 @@ export function provideSettings(storage: Storage) {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    SignupSelectPage,
-    SignupNgoPage,
-    SignupIndividualPage,
-    SignupCorperationPage,
-    TutorialPage,
-    WelcomePage,
-    ConfirmationPage,
-    ContentPage,
-    MenuPage
   ],
   providers: [
     IndividualProvider,
@@ -108,4 +90,7 @@ export function provideSettings(storage: Storage) {
     CorperationProvider,
   ]
 })
-export class AppModule { }
+export class AppModule {
+    constructor() {
+    }
+}
