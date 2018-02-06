@@ -5,13 +5,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { FirstRunPage } from '../pages/pages';
-import { SignupSelectPage } from '../pages/signup-select/signup-select';
-import { SignupIndividualPage } from '../pages/signup-individual/signup-individual';
-import { SignupNgoPage } from '../pages/signup-ngo/signup-ngo';
-import { SignupCorperationPage } from '../pages/signup-corperation/signup-corperation';
-import { TutorialPage } from '../pages/tutorial/tutorial';
-import { WelcomePage } from '../pages/welcome/welcome';
-import { ConfirmationPage } from '../pages/confirmation/confirmation'
+// import { SignupSelectPage } from '../pages/signup-select/signup-select';
+// import { SignupIndividualPage } from '../pages/signup-individual/signup-individual';
+// import { SignupNgoPage } from '../pages/signup-ngo/signup-ngo';
+// import { SignupCorperationPage } from '../pages/signup-corperation/signup-corperation';
+// import { TutorialPage } from '../pages/tutorial/tutorial';
+// import { WelcomePage } from '../pages/welcome/welcome';
+// import { ConfirmationPage } from '../pages/confirmation/confirmation'
 
 import { Settings } from '../providers/providers';
 
@@ -42,13 +42,13 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-    { title: 'Tutorial', component: TutorialPage },
-    { title: 'Welcome', component: WelcomePage },
-    { title: 'SignupSelectPage', component: SignupSelectPage },
-    { title: 'SignupIndividualPage', component: SignupIndividualPage },
-    { title: 'SignupCorperationPage', component: SignupCorperationPage },
-    { title: 'SignupNgoPage', component: SignupNgoPage },
-    { title: 'Confirmaion', component: ConfirmationPage }
+    { title: 'Tutorial', component: 'TutorialPage' },
+    { title: 'Welcome', component: 'WelcomePage' },
+    { title: 'SignupSelectPage', component: 'SignupSelectPage' },
+    { title: 'SignupIndividualPage', component: 'SignupIndividualPage' },
+    { title: 'SignupCorperationPage', component: 'SignupCorperationPage' },
+    { title: 'SignupNgoPage', component: 'SignupNgoPage' },
+    { title: 'Confirmaion', component: 'ConfirmationPage' }
   ]
 
   constructor(private translate: TranslateService, private platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
