@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { NavController, ToastController } from 'ionic-angular';
+import { NavController, ToastController, IonicPage } from 'ionic-angular';
 
 import { NgoProvider } from '../../providers/ngo/ngo';
-import { ConfirmationPage } from '../confirmation/confirmation';
+// import { ConfirmationPage } from '../confirmation/confirmation';
 
 import { TranslateService } from '@ngx-translate/core';
 
+@IonicPage()
 @Component({
   selector: 'page-signup-ngo',
   templateUrl: 'signup-ngo.html',
@@ -54,7 +55,7 @@ export class SignupNgoPage {
 
     // TODO: put in seperate function
     this.ngo.sendSignUp(this.account).subscribe((resp) => {
-      this.navCtrl.push(ConfirmationPage);
+      this.navCtrl.push('ConfirmationPage');
     }, (err) => {
       // Unable to sign up
       let toast = this.toastCtrl.create({
