@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { NavController, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, ToastController } from 'ionic-angular';
 
 import { IndividualProvider } from '../../providers/individual';
-import { ConfirmationPage } from '../confirmation/confirmation';
+// import { ConfirmationPage } from '../confirmation/confirmation';
 
 import { TranslateService } from '@ngx-translate/core';
 
-
+@IonicPage()
 @Component({
   selector: 'page-signup-individual',
   templateUrl: 'signup-individual.html',
@@ -57,7 +57,7 @@ export class SignupIndividualPage {
     // TODO: put in seperate function
     console.log(this.account);
       this.individual.sendSignUp(this.account).subscribe((resp) => {
-        this.navCtrl.push(ConfirmationPage);
+        this.navCtrl.push('ConfirmationPage');
       }, (err) => {
         console.error(err)
         //this.navCtrl.push(ConfirmationPage);
