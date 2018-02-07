@@ -43,4 +43,29 @@ page-welcome {
       background-color: rgb(220, 220, 220);
     }
   }
+
+
+  .signup, .info-text{
+      width: 10%;
+      margin: 0 auto;
+  }
+
+  .large-btn {
+      padding-top: 22px;
+      padding-bottom: 22px;
+  }
+
+
+
+  @media (max-width: 992px) {
+      .signup, .info-text {
+          width: 100%;
+          margin-left: 5px;
+          margin-right: 5px;
+      }
+
+      img {
+          width: auto;
+      }
+  }
 }

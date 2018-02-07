@@ -1,18 +1,28 @@
 <ion-content scroll="false">
 
-  <div class="splash-bg"></div>
-  <div class="splash-info">
-    <div class="splash-logo"></div>
-    <div class="splash-intro">
-        <div>
-            {{ 'CHOOSE_SIGNUP_END' | translate }}
+    <div class="splash-bg"></div>
+    <div class="splash-info">
+        <div class="splash-logo"></div>
+        <div class="splash-intro">
+            <div>
+                {{ 'CHOOSE_SIGNUP_END' | translate }}
+            </div>
         </div>
     </div>
-  </div>
-  <div padding>
-    <button ion-button block (click)="signupForm('individual')" class="fade">{{ 'INDIVIDUAL' | translate }}</button>
-    <button ion-button block (click)="signupForm('corperation')" class="fade">{{ 'CORPERATION' | translate }}</button>
-    <button ion-button block (click)="signupForm('ngo')" class="fade">{{ 'NGO' | translate }}</button>
-  </div>
+    <div padding>
+        <ion-grid>
+            <ion-row>
+                <ion-col col-sm>
+                </ion-col>
+                <ion-row col-sm>
+                    <button ion-button block (click)="signupForm('individual')" class="fade select-button">{{ 'INDIVIDUAL' | translate }}</button>
+                    <button ion-button block (click)="signupForm('corperation')" class="fade select-button">{{ 'CORPERATION' | translate }}</button>
+                    <button ion-button block (click)="signupForm('ngo')" class="fade select-button">{{ 'NGO' | translate }}</button>
+                </ion-row>
+                <ion-col col-sm>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
 
 </ion-content>

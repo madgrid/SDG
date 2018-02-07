@@ -45,4 +45,27 @@ page-signup-select {
         }
     }
 
+    .select-button, .info-text{
+        width: 10%;
+        margin: 0 auto;
+        min-width: 180px;
+    }
+
+    .large-btn {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+
+    @media (max-width: 1746px) {
+        .select-button, .info-text {
+            width: 100%;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        img {
+            width: auto;
+        }
+    }
+
 }
